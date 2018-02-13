@@ -1,0 +1,64 @@
+{
+  "name": "vue-react-dnd",
+  "version": "1.0.0",
+  "description": "Vue Drag and Drop Library based on react-dnd",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.config.js",
+    "lint": "eslint --ext .js,.vue src/**/* docs/**/* build/**/* --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenshaase/vue-react-dnd.git"
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "dnd",
+    "drag",
+    "and",
+    "drop",
+    "vue",
+    "vuejs"
+  ],
+  "author": "Jens Haase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenshaase/vue-react-dnd/issues"
+  },
+  "homepage": "https://github.com/jenshaase/vue-react-dnd#readme",
+  "dependencies": {
+    "disposables": "^1.0.2",
+    "dnd-core": "^2.5.4"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.2"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "react-dnd-html5-backend": "^2.5.4",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "vue": "^2.5.13",
+    "vue-loader": "^13.7.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
