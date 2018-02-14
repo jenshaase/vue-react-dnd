@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.config.js",
-    "lint": "eslint --ext .js,.vue src/**/* docs/**/* build/**/* --quiet"
+    "build": "webpack --env.production --config build/webpack.config.js",
+    "lint": "eslint --ext .js,.vue src/**/* docs/**/* build/**/* --quiet",
+    "publish:doc": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -49,11 +51,13 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.2.0",
     "extract-text-webpack-plugin": "^3.0.2",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "react-dnd-html5-backend": "^2.5.4",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "vue": "^2.5.13",
     "vue-loader": "^13.7.0",
     "vue-router": "^3.0.1",

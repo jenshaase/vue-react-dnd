@@ -9,6 +9,7 @@ Vue.use(VueRouter)
 
 export const router = new VueRouter({
   mode: debug ? 'hash' : 'history',
+  base: debug ? '/' : 'vue-react-dnd',
   routes: routes
 })
 

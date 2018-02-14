@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const AssetsPlugin = require('assets-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = function (env = {}) {
   if (env.production) { process.env.NODE_ENV = 'production' }
@@ -39,10 +40,12 @@ module.exports = function (env = {}) {
           NODE_ENV: '"production"'
         }
       }),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false
-        }
+      new UglifyJSPlugin({
+        uglifyOptions: {
+          compress: {
+            warnings: false
+          }
+        },
       }),
       new ExtractTextPlugin({
         filename: 'css/style.min.css?[contenthash]'
@@ -51,6 +54,16 @@ module.exports = function (env = {}) {
         filename: 'assets.json',
         path: path.resolve(__dirname, '../dist'),
         fullPath: false
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: 'docs/index.html',
+        inject: true,
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true
+        }
       })
     ] : [
       new webpack.HotModuleReplacementPlugin(),

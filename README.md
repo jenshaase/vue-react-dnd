@@ -256,4 +256,7 @@ react-dnd. A live version of the examples can be found here:
 ## Development
 
 Run examples: `npm run dev`
+
 Lint code: `npm run lint`
+
+Publish documentation to gh-pages: `npm run publish:doc`
