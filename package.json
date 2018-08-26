@@ -1,6 +1,6 @@
 {
   "name": "vue-react-dnd",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue Drag and Drop Library based on react-dnd",
   "main": "dist/vue-react-dnd.umd.js",
   "module": "dist/vue-react-dnd.esm.js",
