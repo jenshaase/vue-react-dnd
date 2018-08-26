@@ -1,6 +1,6 @@
 import { DragDropManager } from 'dnd-core'
 
-export default function DragDropContext (backendOrModule) {
+export default function DragDropContext (backendOrModule, context = {}) {
   let backend = backendOrModule
   if (typeof backend === 'object' && typeof backend.default === 'function') {
     backend = backend.default
@@ -8,7 +8,7 @@ export default function DragDropContext (backendOrModule) {
 
   return {
     provide: {
-      dragDropManager: new DragDropManager(backend)
+      dragDropManager: new DragDropManager(backend, context)
     }
   }
 }
