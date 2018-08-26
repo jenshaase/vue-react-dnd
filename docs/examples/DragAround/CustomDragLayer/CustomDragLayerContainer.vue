@@ -21,7 +21,7 @@
 
 <script>
 import DraggableBox from './DraggableBox'
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 import ItemTypes from './ItemTypes'
 import CustomDragLayer from './CustomDragLayer'
 import snapToGrid from './snapToGrid'

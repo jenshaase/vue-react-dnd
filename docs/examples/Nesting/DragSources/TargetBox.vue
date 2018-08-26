@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 import Colors from './Colors'
 
 export default {

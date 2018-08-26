@@ -6,7 +6,7 @@
 
 <script>
 import CustomDragLayerContainer from './CustomDragLayerContainer'
-import DragDropContextProvider from 'vue-react-dnd/DragDropContextProvider'
+import { DragDropContextProvider } from 'vue-react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 
 export default {

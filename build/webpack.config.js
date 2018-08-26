@@ -45,7 +45,7 @@ module.exports = function (env = {}) {
           compress: {
             warnings: false
           }
-        },
+        }
       }),
       new ExtractTextPlugin({
         filename: 'css/style.min.css?[contenthash]'

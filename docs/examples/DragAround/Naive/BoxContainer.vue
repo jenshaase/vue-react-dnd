@@ -20,7 +20,7 @@
 
 <script>
 import Box from './Box'
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 import ItemTypes from './ItemTypes'
 
 export default {

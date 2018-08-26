@@ -4,7 +4,7 @@
 
 <script>
 import CardList from './CardList'
-import DragDropContext from 'vue-react-dnd/DragDropContext'
+import { DragDropContext } from 'vue-react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 
 export default {

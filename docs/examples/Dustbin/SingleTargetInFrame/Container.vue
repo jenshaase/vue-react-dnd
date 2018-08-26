@@ -18,7 +18,7 @@
 <script>
 import Dustbin from './../SingleTarget/Dustbin'
 import Box from './../SingleTarget/Box'
-import DragDropContextProvider from 'vue-react-dnd/DragDropContextProvider'
+import { DragDropContextProvider } from 'vue-react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 import Frame from 'docs/components/Frame'
 

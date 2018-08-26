@@ -2,12 +2,18 @@
   "name": "vue-react-dnd",
   "version": "1.0.0",
   "description": "Vue Drag and Drop Library based on react-dnd",
-  "main": "index.js",
+  "main": "dist/vue-react-dnd.umd.js",
+  "module": "dist/vue-react-dnd.esm.js",
+  "unpkg": "dist/vue-react-dnd.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.config.js",
-    "build": "webpack --env.production --config build/webpack.config.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-react-dnd.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-react-dnd.es.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-react-dnd.min.js",
+    "build:lib": "npm run build:umd && npm run build:es && npm run build:unpkg",
+    "build:doc": "webpack --env.production --config build/webpack.config.js",
     "lint": "eslint --ext .js,.vue src/**/* docs/**/* build/**/* --quiet",
-    "publish:doc": "npm run build && gh-pages -d dist"
+    "publish:doc": "npm run build:doc && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -55,6 +61,9 @@
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "react-dnd-html5-backend": "^2.5.4",
+    "rollup": "^0.65.0",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-vue": "^4.3.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.8",

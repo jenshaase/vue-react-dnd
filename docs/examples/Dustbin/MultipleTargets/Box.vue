@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import DragSource from 'vue-react-dnd/DragSource'
+import { DragSource } from 'vue-react-dnd'
 import ItemTypes from './ItemTypes'
 
 export default {

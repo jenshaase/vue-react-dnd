@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import DragSource from 'vue-react-dnd/DragSource'
+import { DragSource } from 'vue-react-dnd'
 import Colors from './Colors'
 
 export default {

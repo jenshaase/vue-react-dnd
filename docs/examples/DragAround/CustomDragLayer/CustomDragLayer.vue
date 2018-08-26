@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DragLayer from 'vue-react-dnd/DragLayer'
+import { DragLayer } from 'vue-react-dnd'
 import ItemTypes from './ItemTypes'
 import BoxDragPreview from './BoxDragPreview'
 import snapToGrid from './snapToGrid'

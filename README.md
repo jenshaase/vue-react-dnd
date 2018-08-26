@@ -34,7 +34,7 @@ directive to the HTML.
 
 ```javascript
 // 1. Import DragSource Mixin
-import DragSource from 'vue-react-dnd/DragSource'
+import { DragSource } from 'vue-react-dnd'
 
 new Vue({
 
@@ -110,7 +110,7 @@ directive to the HTML.
 
 ```javascript
 // 1. Import DropTarget Mixin
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 
 new Vue({
   
@@ -180,7 +180,7 @@ application.
 ```
 
 ```javascript
-import DragDropContext from 'vue-react-dnd/DragDropContext'
+import { DragDropContext } from 'vue-react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 
 new Vue({
@@ -207,7 +207,7 @@ Backend to your application.
 ```
 
 ```javascript
-import DragDropContextProvider from 'vue-react-dnd/DragDropContextProvider'
+import { DragDropContextProvider } from 'vue-react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 
 new Vue({

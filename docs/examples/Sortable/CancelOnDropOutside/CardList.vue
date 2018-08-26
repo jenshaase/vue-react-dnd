@@ -12,7 +12,7 @@
 
 <script>
 import Card from './Card'
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 import ItemTypes from './ItemTypes'
 
 export default {

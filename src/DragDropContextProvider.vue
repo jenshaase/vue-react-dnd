@@ -8,7 +8,7 @@
 import { DragDropManager } from 'dnd-core'
 
 export default {
-  name: 'app',
+  name: 'DragDropContextProvider',
   inject: {
     window: { default: window }
   },
@@ -41,7 +41,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

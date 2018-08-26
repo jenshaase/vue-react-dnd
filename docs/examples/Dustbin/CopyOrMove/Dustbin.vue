@@ -10,7 +10,7 @@
 <script>
 
 import ItemsTypes from './../SingleTarget/ItemTypes'
-import DropTarget from 'vue-react-dnd/DropTarget'
+import { DropTarget } from 'vue-react-dnd'
 
 export default {
   name: 'Dustbin',
