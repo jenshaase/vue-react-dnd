@@ -197,8 +197,9 @@ new Vue({
 
 ### DragDropContextProvider
 
-Use the `DragDropContextProvider` component to add a Drag and Drop
-Backend to your application.
+As alternative to the `DragDropContext` use the
+`DragDropContextProvider` component to add a Drag and Drop Backend to
+your application.
 
 ```html
 <DragDropContextProvider v-bind:backend="html5Backend">
@@ -260,3 +261,10 @@ Run examples: `npm run dev`
 Lint code: `npm run lint`
 
 Publish documentation to gh-pages: `npm run publish:doc`
+
+# Publish new version
+
+1. `npm run publish:doc`
+2. `npm run build:lib`
+3. `npm version <newversion>`
+4. `npm publish`
